@@ -23,11 +23,12 @@ void ConfigureServices(IServiceCollection services)
 
     services.AddSwaggerGen(options =>
     {
-        options.SwaggerDoc("v1",
+        options.SwaggerDoc(
+            "v1",
             new OpenApiInfo
             {
                 Title = "Maths Quiz API",
-                Version = "0.1"
+                Version = "0.1",
             });
 
         var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
@@ -68,7 +69,6 @@ void ConfigureMiddleware(IApplicationBuilder app, IWebHostEnvironment env)
     app.UseHttpsRedirection();
 
     app.UseAuthorization();
-
 }
 
 void ConfigureEndpoints(IEndpointRouteBuilder app)

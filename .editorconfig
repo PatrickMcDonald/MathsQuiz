@@ -87,6 +87,8 @@ dotnet_naming_style.pascal_case.capitalization = pascal_case
 
 dotnet_diagnostic.SA1101.severity = silent
 dotnet_diagnostic.SA1309.severity = none
+dotnet_diagnostic.SA1501.severity = suggestion
+dotnet_diagnostic.SA1502.severity = suggestion
 dotnet_diagnostic.SA1600.severity = silent
 dotnet_diagnostic.SA1601.severity = silent
 dotnet_diagnostic.SA1602.severity = silent
