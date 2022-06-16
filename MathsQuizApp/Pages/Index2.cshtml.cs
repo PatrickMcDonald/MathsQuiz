@@ -14,7 +14,6 @@ namespace MathsQuizApp.Pages
 
         public void OnGet()
         {
-
         }
     }
 }

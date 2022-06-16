@@ -5,7 +5,14 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>a080e47d-1ad5-4ff6-9dcf-aa9f790d2ea8</UserSecretsId>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <AnalysisLevel>latest</AnalysisLevel>
+    <NoWarn>$(NoWarn);1591</NoWarn>
   </PropertyGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="../stylecop.json" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
@@ -13,6 +20,10 @@
     <PackageReference Include="Microsoft.Identity.Web" Version="1.25.0" />
     <PackageReference Include="Microsoft.Identity.Web.MicrosoftGraph" Version="1.25.0" />
     <PackageReference Include="Microsoft.Identity.Web.UI" Version="1.25.0" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.435">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
 </Project>

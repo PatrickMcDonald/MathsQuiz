@@ -10,7 +10,7 @@ namespace MathsQuizApp.Controllers
     public class HomeController : Controller
     {
         private readonly GraphServiceClient _graphServiceClient;
-    
+
         public HomeController(GraphServiceClient graphServiceClient)
         {
             _graphServiceClient = graphServiceClient;
@@ -18,11 +18,11 @@ namespace MathsQuizApp.Controllers
 
         [AuthorizeForScopes(ScopeKeySection = "MicrosoftGraph:Scopes")]
         [HttpGet]
-        public async Task< ActionResult> Index()
+        public async Task<ActionResult> Index()
         {
             var user = await _graphServiceClient.Me.Request().GetAsync();
             ViewData["GraphApiResult"] = user.DisplayName;
-            
+
             return View();
         }
 
