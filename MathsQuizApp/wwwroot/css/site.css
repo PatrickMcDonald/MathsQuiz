@@ -16,3 +16,18 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.validation-summary ul {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.validation-summary.validation-summary-valid {
+  display: none;
+}
+
+.field-validation-error {
+  color: red;
+  font-size: smaller;
+}
